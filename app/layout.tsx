@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "uPro Partner — Your Cargo, Delivered",
-  description: "Modern, secure, and efficient logistics services across domestic and international routes.",
+  title: "uPro Group | TMD Logistics LLC",
+  description: "Car hauling dispatch, recruiting, brokerage, and driver referral network services.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
