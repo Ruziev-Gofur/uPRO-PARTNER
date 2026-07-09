@@ -42,9 +42,9 @@ const navItems = [
   ["About Us", "#about"],
   ["Services", "#services"],
   ["Contact Us", "#contact"],
-  // ["Privacy Policy", "/privacy-policy"],
-  // ["Terms & Conditions", "/terms-and-conditions"],
-  // ["SMS Terms & Conditions", "/sms-terms-and-conditions"],
+  ["Privacy Policy", "/privacy-policy"],
+  ["Terms & Conditions", "/terms-and-conditions"],
+  ["SMS Terms & Conditions", "/sms-terms-and-conditions"],
 ];
 
 export default function Home() {
@@ -54,7 +54,7 @@ export default function Home() {
     <main className="site">
       <header className="topbar">
         <a className="brand" href="#home" aria-label="uPro Group home">
-          <span className="brand-mark">uP</span>
+          <span className="brand-mark">uPro</span>
           <span>
             <strong className="copy-strong">uPro Group</strong>
             <small>TMD Logistics LLC</small>
@@ -238,9 +238,9 @@ export default function Home() {
           <span>Legal name: TMD Logistics LLC</span>
         </div>
         <nav aria-label="Footer navigation">
-          {/* <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/privacy-policy">Privacy Policy</a>
           <a href="/terms-and-conditions">Terms & Conditions</a>
-          <a href="/sms-terms-and-conditions">SMS Terms & Conditions</a> */}
+          <a href="/sms-terms-and-conditions">SMS Terms & Conditions</a>
         </nav>
       </footer>
     </main>
