@@ -483,6 +483,10 @@ textarea {
   padding: 60px 24px 90px;
 }
 
+.legal-page .eyebrow {
+  margin-left: 2.5em;
+}
+
 .legal-page h1 {
   margin: 16px 0 6px;
   font-size: clamp(2.7rem, 6vw, 5rem);
