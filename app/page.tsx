@@ -7,6 +7,7 @@ import {
   Mail,
   Menu,
   Phone,
+  Send,
   ShieldCheck,
   Truck,
   Users,
@@ -187,6 +188,9 @@ export default function Home() {
             </a>
             <a href="mailto:info@uprologistics.com">
               <Mail size={18} /> info@uprologistics.com
+            </a>
+            <a href="https://t.me/Dostonbek_Bekchanov" target="_blank" rel="noopener noreferrer">
+              <Send size={18} /> My Telegram
             </a>
           </div>
         </div>
