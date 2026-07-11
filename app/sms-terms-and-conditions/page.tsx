@@ -11,8 +11,8 @@ export default function SmsTermsAndConditions() {
       <section>
         <h2>Program description</h2>
         <p>
-          By opting in to SMS messages from TMD Logistics LLC / uPro Group, you agree to receive text messages related to
-          your inquiry, service coordination, business updates, appointment or dispatch communication, and support.
+          By opting in to SMS messages from TMD Logistics LLC / uPro Group, you agree to receive text messages regarding
+          customer support, dispatch services, recruiting updates, brokerage communications, and account notifications.
         </p>
       </section>
 

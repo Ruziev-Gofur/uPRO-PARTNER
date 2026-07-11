@@ -36,8 +36,8 @@ export default function PrivacyPolicy() {
         <h2>SMS consent and phone numbers</h2>
         <p>
           If you provide your phone number and check the SMS consent box, you agree that TMD Logistics LLC / uPro Group
-          may send SMS messages related to your inquiry, account, service coordination, or business communication. SMS
-          consent is collected separately and is not preselected.
+          may send SMS messages regarding customer support, dispatch services, recruiting updates, brokerage
+          communications, and account notifications. SMS consent is collected separately and is not preselected.
         </p>
         <p>
           We do not share, sell, rent, or disclose SMS consent records or phone numbers to third parties or affiliates

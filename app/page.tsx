@@ -14,6 +14,7 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
+import ContactForm from "./contact-form";
 
 const services = [
   {
@@ -42,7 +43,7 @@ const navItems = [
   ["Home", "#home"],
   ["About Us", "#about"],
   ["Services", "#services"],
-  ["Contact Us", "#contact"],
+  ["Contact Us", "/contact"],
   ["Privacy Policy", "/privacy-policy"],
   ["Terms & Conditions", "/terms-and-conditions"],
   ["SMS Terms & Conditions", "/sms-terms-and-conditions"],
@@ -100,7 +101,7 @@ export default function Home() {
             businesses that need dependable communication every day of the week.
           </p>
           <div className="hero-actions">
-            <a className="primary-button" href="#contact">
+            <a className="primary-button" href="/contact">
               Contact Us <ArrowRight size={18} />
             </a>
             <a className="secondary-button" href="#services">
@@ -189,51 +190,13 @@ export default function Home() {
             <a href="mailto:info@uprologistics.com">
               <Mail size={18} /> info@uprologistics.com
             </a>
-            <a href="https://t.me/Dostonbek_Bekchanov" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/upro_manager" target="_blank" rel="noopener noreferrer">
               <Send size={18} /> My Telegram
             </a>
           </div>
         </div>
 
-        <form className="contact-form">
-          <label>
-            Full name
-            <input type="text" name="name" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Phone
-            <input type="tel" name="phone" placeholder="(312) 373-1282" />
-          </label>
-          <label>
-            Service needed
-            <select name="service" defaultValue="">
-              <option value="" disabled>
-                Select a service
-              </option>
-              {services.map((service) => (
-                <option key={service.title}>{service.title}</option>
-              ))}
-            </select>
-          </label>
-          <label className="full">
-            Message
-            <textarea name="message" rows={5} placeholder="Tell us how we can help" />
-          </label>
-          <label className="sms-consent full">
-            <input type="checkbox" name="smsConsent" />
-            <span>
-              I consent to receive SMS messages from TMD Logistics LLC / <strong className="copy-strong">uPro Group</strong> at the phone number provided.
-              Message and data rates may apply. Reply STOP to opt out. Consent is not a condition of purchase.
-            </span>
-          </label>
-          <button className="primary-button full" type="submit">
-            Send Message <ArrowRight size={18} />
-          </button>
-        </form>
+        <ContactForm />
       </section>
 
       <footer className="footer">
