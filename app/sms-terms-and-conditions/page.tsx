@@ -11,8 +11,9 @@ export default function SmsTermsAndConditions() {
       <section>
         <h2>Program description</h2>
         <p>
-          By opting in to SMS messages from TMD Logistics LLC / uPro Group, you agree to receive text messages regarding
-          customer support, dispatch services, recruiting updates, brokerage communications, and account notifications.
+          If you consent to receive SMS from TMD Logistics LLC / uPro Group, you agree to receive conversational and
+          informational text messages regarding customer support, dispatch services, recruiting updates, brokerage
+          communications, and account notifications.
         </p>
       </section>
 
@@ -44,9 +45,19 @@ export default function SmsTermsAndConditions() {
         <h2>Privacy</h2>
         <p>
           We do not share, sell, rent, or disclose SMS consent records or phone numbers to third parties or affiliates
-          for their marketing or promotional purposes. Please review our Privacy Policy for more information.
+          for their marketing or promotional purposes. Please review our <a href="/privacy-policy">Privacy Policy</a>{" "}
+          and <a href="/terms-and-conditions">Terms & Conditions</a> for more information.
         </p>
       </section>
+
+      <footer className="footer">
+        <nav aria-label="Legal navigation">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-and-conditions">Terms & Conditions</a>
+          <a href="/sms-terms-and-conditions">SMS Terms & Conditions</a>
+          <a href="/contact">Contact Us</a>
+        </nav>
+      </footer>
     </main>
   );
 }

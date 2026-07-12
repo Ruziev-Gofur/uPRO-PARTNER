@@ -45,6 +45,15 @@ export default function TermsAndConditions() {
         <h2>Contact</h2>
         <p>Questions about these terms can be sent to info@uprologistics.com or by calling (312) 373-1282.</p>
       </section>
+
+      <footer className="footer">
+        <nav aria-label="Legal navigation">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-and-conditions">Terms & Conditions</a>
+          <a href="/sms-terms-and-conditions">SMS Terms & Conditions</a>
+          <a href="/contact">Contact Us</a>
+        </nav>
+      </footer>
     </main>
   );
 }
