@@ -44,8 +44,30 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Name, email, and phone are required." }, { status: 400 });
   }
 
-  if (!submission.smsConsent) {
-    return NextResponse.json({ error: "SMS consent is required before submitting the form." }, { status: 400 });
+  const apiBaseUrl = (process.env.UPRO_API_URL || "https://api.upro.uz/api/v1").replace(/\/$/, "");
+
+  try {
+    const response = await fetch(`${apiBaseUrl}/upro-contact`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: submission.name,
+        email: submission.email,
+        phone: submission.phone,
+        service: submission.service,
+        message: submission.message,
+        smsConsent: submission.smsConsent,
+      }),
+      cache: "no-store",
+    });
+
+    if (!response.ok) {
+      const details = await response.text();
+      throw new Error(`uPro API failed with ${response.status}: ${details}`);
+    }
+  } catch (error) {
+    console.error("uPro contact API submission failed:", error);
+    return NextResponse.json({ error: "The message could not be delivered." }, { status: 502 });
   }
 
   const webhookUrl = process.env.CONTACT_WEBHOOK_URL;

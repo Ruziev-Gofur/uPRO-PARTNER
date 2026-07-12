@@ -40,12 +40,6 @@ export default function ContactForm() {
       return;
     }
 
-    if (!payload.smsConsent) {
-      setStatus("error");
-      setError("Please agree to the SMS consent before sending the form.");
-      return;
-    }
-
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -67,7 +61,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form" action="/api/contact" method="post" onSubmit={handleSubmit}>
       <label>
         Full name
         <input type="text" name="name" placeholder="Your name" required />
@@ -79,6 +73,17 @@ export default function ContactForm() {
       <label>
         Phone
         <input type="tel" name="phone" placeholder="(312) 373-1282" required />
+      </label>
+      <label className="sms-consent full">
+        <input type="checkbox" name="smsConsent" />
+        <span>
+          Optional SMS consent: By checking this box, I agree to receive recurring automated and non-automated SMS
+          messages from TMD Logistics LLC / uPro Group about customer support, dispatch services, recruiting updates,
+          brokerage communications, and account notifications. Message frequency varies. Message and data rates may
+          apply. Reply STOP to opt out and HELP for help. Consent is not a condition of purchase. See our {" "}
+          <a href="/privacy-policy">Privacy Policy</a> and {" "}
+          <a href="/sms-terms-and-conditions">SMS Terms & Conditions</a>.
+        </span>
       </label>
       <label>
         Service needed
@@ -94,14 +99,6 @@ export default function ContactForm() {
       <label className="full">
         Message
         <textarea name="message" rows={5} placeholder="Tell us how we can help" />
-      </label>
-      <label className="sms-consent full">
-        <input type="checkbox" name="smsConsent" required />
-        <span>
-          {consentText}{" "}
-          <a href="/privacy-policy">Privacy Policy</a> and{" "}
-          <a href="/sms-terms-and-conditions">SMS Terms & Conditions</a>.
-        </span>
       </label>
       {status === "success" && (
         <p className="form-message success full">Your message has been sent successfully.</p>
