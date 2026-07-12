@@ -11,7 +11,7 @@ const services = [
 ];
 
 const consentText =
-  "I agree to receive SMS messages from TMD Logistics LLC / uPro Group regarding customer support, dispatch services, recruiting updates, brokerage communications, and account notifications. Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for assistance. Consent is not a condition of purchase.";
+  "By checking this box, I consent to receive conversational and informational SMS from TMD Logistics LLC / uPro Group about customer care, dispatch services, recruiting updates, brokerage communications, and account notifications. Reply STOP to opt out; reply HELP for support; message and data rates may apply; messaging frequency may vary. Consent is not a condition of purchase.";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -77,10 +77,7 @@ export default function ContactForm() {
       <label className="sms-consent full">
         <input type="checkbox" name="smsConsent" />
         <span>
-          I agree to receive recurring automated and non-automated SMS
-          messages from TMD Logistics LLC / uPro Group about customer support, dispatch services, recruiting updates,
-          brokerage communications, and account notifications. Message frequency varies. Message and data rates may
-          apply. Reply STOP to opt out and HELP for help. Consent is not a condition of purchase. See our {" "}
+          {consentText} See our {" "}
           <a href="/privacy-policy">Privacy Policy</a> and {" "}
           <a href="/sms-terms-and-conditions">SMS Terms & Conditions</a>.
         </span>
