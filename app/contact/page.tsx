@@ -51,7 +51,7 @@ export default function ContactPage() {
               <Mail size={18} /> info@uprologistics.com
             </a>
             <a href="https://t.me/upro_manager" target="_blank" rel="noopener noreferrer">
-              <Send size={18} /> My Telegram
+              <Send size={18} /> Telegram Business
             </a>
           </div>
         </div>

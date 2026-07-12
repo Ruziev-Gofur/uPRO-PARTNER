@@ -45,6 +45,9 @@ export async function POST(request: Request) {
   }
 
   const apiBaseUrl = (process.env.UPRO_API_URL || "https://api.upro.uz/api/v1").replace(/\/$/, "");
+  const forwardedFor = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim();
+  const ipAddress = forwardedFor || request.headers.get("x-real-ip") || "unknown";
+  const userAgent = request.headers.get("user-agent") || "unknown";
 
   try {
     const response = await fetch(`${apiBaseUrl}/upro-contact`, {
@@ -54,6 +57,8 @@ export async function POST(request: Request) {
         name: submission.name,
         email: submission.email,
         phone: submission.phone,
+        ipAddress,
+        userAgent,
         service: submission.service,
         message: submission.message,
         smsConsent: submission.smsConsent,

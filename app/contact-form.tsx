@@ -77,7 +77,7 @@ export default function ContactForm() {
       <label className="sms-consent full">
         <input type="checkbox" name="smsConsent" />
         <span>
-          Optional SMS consent: By checking this box, I agree to receive recurring automated and non-automated SMS
+          I agree to receive recurring automated and non-automated SMS
           messages from TMD Logistics LLC / uPro Group about customer support, dispatch services, recruiting updates,
           brokerage communications, and account notifications. Message frequency varies. Message and data rates may
           apply. Reply STOP to opt out and HELP for help. Consent is not a condition of purchase. See our {" "}
