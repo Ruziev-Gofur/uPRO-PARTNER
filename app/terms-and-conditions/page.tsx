@@ -4,14 +4,15 @@ export default function TermsAndConditions() {
       <a className="back-link" href="/">
         Back to Home
       </a>
-      <span className="eyebrow">uPro Group</span>
+      <span className="eyebrow">uPro Logistics</span>
       <h1>Terms & Conditions</h1>
       <p className="updated">Last updated: July 9, 2026</p>
 
       <section>
         <h2>Use of this website</h2>
         <p>
-          This website is operated by TMD Logistics LLC under the brand name uPro Group. By using this website, you agree
+          This website is operated by TMD Logistics LLC under the brand name uPro Logistics. The business website is
+          uprologistics.com. By using this website, you agree
           to use it only for lawful purposes and in a way that does not interfere with the website or other users.
         </p>
       </section>
@@ -19,7 +20,7 @@ export default function TermsAndConditions() {
       <section>
         <h2>Services</h2>
         <p>
-          uPro Group provides car hauling dispatch service 24/7, car hauling recruiting, car hauling brokerage, and a car
+          uPro Logistics provides car hauling dispatch service 24/7, car hauling recruiting, car hauling brokerage, and a car
           hauling driver referral network system. Service availability, scope, and pricing may vary based on each
           business arrangement.
         </p>

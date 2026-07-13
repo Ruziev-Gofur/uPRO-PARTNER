@@ -4,14 +4,14 @@ export default function PrivacyPolicy() {
       <a className="back-link" href="/">
         Back to Home
       </a>
-      <span className="eyebrow">uPro Group</span>
+      <span className="eyebrow">uPro Logistics</span>
       <h1>Privacy Policy</h1>
       <p className="updated">Last updated: July 9, 2026</p>
 
       <section>
         <h2>Who we are</h2>
         <p>
-          uPro Group is the brand name of TMD Logistics LLC. We provide car hauling dispatch, recruiting, brokerage,
+          uPro Logistics is the brand name of TMD Logistics LLC. We provide car hauling dispatch, recruiting, brokerage,
           and driver referral network services. You can contact us at info@uprologistics.com or (312) 373-1282.
         </p>
       </section>
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
       <section>
         <h2>SMS consent and phone numbers</h2>
         <p>
-          If you provide your phone number and check the SMS consent box, you agree that TMD Logistics LLC / uPro Group
+          If you provide your phone number and check the SMS consent box, you agree that TMD Logistics LLC / uPro Logistics
           may send SMS messages regarding customer support, dispatch services, recruiting updates, brokerage
           communications, and account notifications. SMS consent is collected separately and is not preselected.
         </p>

@@ -4,7 +4,7 @@ export default function SmsTermsAndConditions() {
       <a className="back-link" href="/">
         Back to Home
       </a>
-      <span className="eyebrow">uPro Group</span>
+      <span className="eyebrow">uPro Logistics</span>
       <h1>SMS Terms & Conditions</h1>
       <p className="updated">Last updated: July 9, 2026</p>
 
@@ -12,7 +12,7 @@ export default function SmsTermsAndConditions() {
         <h2>Program description</h2>
         <p>
           By checking the SMS consent box, you consent to receive conversational and informational SMS from TMD
-          Logistics LLC / uPro Group about customer care, dispatch services, recruiting updates, brokerage
+          Logistics LLC / uPro Logistics about customer care, dispatch services, recruiting updates, brokerage
           communications, and account notifications.
         </p>
       </section>

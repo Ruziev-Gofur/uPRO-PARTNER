@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "uPro Group | TMD Logistics LLC",
+  title: "uPro Logistics | TMD Logistics LLC",
   description: "Car hauling dispatch, recruiting, brokerage, and driver referral network services.",
 };
 

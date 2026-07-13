@@ -55,10 +55,10 @@ export default function Home() {
   return (
     <main className="site">
       <header className="topbar">
-        <a className="brand" href="#home" aria-label="uPro Group home">
+        <a className="brand" href="#home" aria-label="uPro Logistics home">
           <span className="brand-mark">uPro</span>
           <span>
-            <strong className="copy-strong">uPro Group</strong>
+            <strong className="copy-strong">uPro Logistics</strong>
             <small>TMD Logistics LLC</small>
           </span>
         </a>
@@ -95,7 +95,7 @@ export default function Home() {
       <section id="home" className="hero">
         <div className="hero-copy">
           <span className="eyebrow">Car hauling support for modern carriers</span>
-          <h1 className="copy-strong">uPro Group</h1>
+          <h1 className="copy-strong">uPro Logistics</h1>
           <p>
             TMD Logistics LLC provides dispatch, recruiting, brokerage, and referral network support for car hauling
             businesses that need dependable communication every day of the week.
@@ -141,7 +141,7 @@ export default function Home() {
           <h2 className="copy-strong">Built for carriers, drivers, and vehicle transport teams.</h2>
         </div>
         <p>
-          <strong className="copy-strong">uPro Group</strong> is the brand name of TMD Logistics LLC. We help car hauling professionals stay organized,
+          <strong className="copy-strong">uPro Logistics</strong> is the brand name of TMD Logistics LLC. We help car hauling professionals stay organized,
           connected, and responsive through practical operations support and clear customer communication.
         </p>
       </section>
@@ -179,7 +179,7 @@ export default function Home() {
       <section id="contact" className="section contact">
         <div className="contact-copy">
           <span className="eyebrow">Contact Us</span>
-          <h2 className="copy-strong">Start a conversation with uPro Group.</h2>
+          <h2 className="copy-strong">Start a conversation with uPro Logistics.</h2>
           <p>
             Reach TMD Logistics LLC by phone or email, or send the form and our team will respond as soon as possible.
           </p>
@@ -201,7 +201,7 @@ export default function Home() {
 
       <footer className="footer">
         <div>
-          <strong className="copy-strong">uPro Group</strong>
+          <strong className="copy-strong">uPro Logistics</strong>
           <span>Legal name: TMD Logistics LLC</span>
         </div>
         <nav aria-label="Footer navigation">

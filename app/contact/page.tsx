@@ -15,10 +15,10 @@ export default function ContactPage() {
   return (
     <main className="site">
       <header className="topbar">
-        <a className="brand" href="/#home" aria-label="uPro Group home">
+        <a className="brand" href="/#home" aria-label="uPro Logistics home">
           <span className="brand-mark">uPro</span>
           <span>
-            <strong className="copy-strong">uPro Group</strong>
+            <strong className="copy-strong">uPro Logistics</strong>
             <small>TMD Logistics LLC</small>
           </span>
         </a>
@@ -38,9 +38,9 @@ export default function ContactPage() {
       <section className="section contact contact-page">
         <div className="contact-copy">
           <span className="eyebrow">Contact Us</span>
-          <h1 className="copy-strong">Contact uPro Group.</h1>
+          <h1 className="copy-strong">Contact uPro Logistics.</h1>
           <p>
-            Use this form to contact TMD Logistics LLC / uPro Group about dispatch services, recruiting, brokerage,
+            Use this form to contact TMD Logistics LLC / uPro Logistics about dispatch services, recruiting, brokerage,
             driver referral network support, account notifications, and customer care.
           </p>
           <div className="contact-lines">
@@ -61,7 +61,7 @@ export default function ContactPage() {
 
       <footer className="footer">
         <div>
-          <strong className="copy-strong">uPro Group</strong>
+          <strong className="copy-strong">uPro Logistics</strong>
           <span>Legal name: TMD Logistics LLC</span>
         </div>
         <nav aria-label="Footer navigation">
