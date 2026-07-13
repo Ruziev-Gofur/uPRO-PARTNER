@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { NextResponse } from "next/server";
 
 const consentText =
-  "By checking this box, I consent to receive Customer Care, Marketing, Account Notifications, and Delivery Notifications SMS messages from TMD Logistics LLC (uPro Group). Reply STOP to opt out; Reply HELP for support; Message & data rates may apply; Messaging frequency may vary. Visit https://www.uprogroup.com/privacy-policy to see our Privacy Policy and https://www.uprogroup.com/terms-and-conditions for our Terms of Service.";
+  "By checking this box, I consent to receive Customer Care, Marketing, Account Notifications, and Delivery Notifications SMS messages from TMD Logistics LLC (uPro Group). Reply STOP to opt out; Reply HELP for support; Message & data rates may apply; Messaging frequency may vary. Visit https://www.uprologistics.com/privacy-policy to see our Privacy Policy and https://www.uprologistics.com/terms-and-conditions for our Terms of Service.";
 
 type ContactPayload = {
   name?: string;
