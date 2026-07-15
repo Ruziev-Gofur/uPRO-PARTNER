@@ -43,6 +43,13 @@ export default function PrivacyPolicy() {
           We do not share, sell, rent, or disclose SMS consent records or phone numbers to third parties or affiliates
           for their marketing or promotional purposes.
         </p>
+        <p>
+          Mobile Opt in, SMS Consent, and phone numbers collected for SMS communication purposes will not be shared with
+          any third party or affiliates for marketing purposes.
+        </p>
+        <p>
+          SMS consent and phone numbers are not shared with any third parties/affiliates under any circumstances.
+        </p>
       </section>
 
       <section>

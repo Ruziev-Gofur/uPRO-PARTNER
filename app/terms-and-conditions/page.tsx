@@ -40,6 +40,13 @@ export default function TermsAndConditions() {
           By contacting us, you authorize us to respond using the contact details you provide. SMS communications are
           governed by our SMS Terms & Conditions and require separate consent.
         </p>
+        <p>
+          Mobile Opt in, SMS Consent, and phone numbers collected for SMS communication purposes will not be shared with
+          any third party or affiliates for marketing purposes.
+        </p>
+        <p>
+          SMS consent and phone numbers are not shared with any third parties/affiliates under any circumstances.
+        </p>
       </section>
 
       <section>
