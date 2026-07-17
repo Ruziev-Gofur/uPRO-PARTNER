@@ -726,10 +726,33 @@ textarea {
   font-size: 24px;
 }
 
+.legal-page h3 {
+  margin: 24px 0 8px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
 .legal-page p {
   color: var(--muted);
   line-height: 1.75;
   font-size: 16px;
+}
+
+.legal-page ul {
+  margin: 10px 0 18px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.legal-page a:not(.back-link) {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sms-terms-block {
+  border-top: 1px solid var(--line);
 }
 
 .back-link {

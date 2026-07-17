@@ -1,12 +1,19 @@
+import SiteHeader from "../site-header";
+import SmsTermsContent from "../sms-terms-content";
+
 export default function SmsTermsAndConditions() {
   return (
-    <main className="legal-page">
-      <a className="back-link" href="/">
-        Back to Home
-      </a>
-      <span className="eyebrow">uPro Logistics</span>
-      <h1>SMS Terms & Conditions</h1>
-      <p className="updated">Last updated: July 9, 2026</p>
+    <main className="site legal-site">
+      <SiteHeader />
+      <div className="legal-page">
+        <a className="back-link" href="/">
+          Back to Home
+        </a>
+        <span className="eyebrow">uPro Logistics</span>
+        <h1>SMS Terms & Conditions</h1>
+        <p className="updated">Last updated: July 9, 2026</p>
+
+      <SmsTermsContent />
 
       <section>
         <h2>Program description</h2>
@@ -58,6 +65,7 @@ export default function SmsTermsAndConditions() {
           <a href="/contact">Contact Us</a>
         </nav>
       </footer>
+      </div>
     </main>
   );
 }

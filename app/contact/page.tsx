@@ -1,41 +1,11 @@
 import { Mail, Phone, Send } from "lucide-react";
 import ContactForm from "../contact-form";
-import ThemeToggle from "../theme-toggle";
-
-const navItems = [
-  ["Home", "/#home"],
-  ["About Us", "/#about"],
-  ["Services", "/#services"],
-  ["Contact Us", "/contact"],
-  ["Privacy Policy", "/privacy-policy"],
-  ["Terms & Conditions", "/terms-and-conditions"],
-  ["SMS Terms & Conditions", "/sms-terms-and-conditions"],
-];
+import SiteHeader from "../site-header";
 
 export default function ContactPage() {
   return (
     <main className="site">
-      <header className="topbar">
-        <a className="brand" href="/#home" aria-label="uPro Logistics home">
-          <span className="brand-mark">uPro</span>
-          <span>
-            <strong className="copy-strong">uPro Logistics</strong>
-            <small>TMD Logistics LLC</small>
-          </span>
-        </a>
-        <nav className="nav-links" aria-label="Main navigation">
-          {navItems.map(([label, href]) => (
-            <a key={href} href={href}>
-              {label}
-            </a>
-          ))}
-        </nav>
-        <ThemeToggle />
-        <a className="header-call" href="tel:+13123731282">
-          <Phone size={17} />
-          (312) 373-1282
-        </a>
-      </header>
+      <SiteHeader />
 
       <section className="section contact contact-page">
         <div className="contact-copy">

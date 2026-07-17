@@ -1,12 +1,17 @@
+import SiteHeader from "../site-header";
+import SmsTermsContent from "../sms-terms-content";
+
 export default function TermsAndConditions() {
   return (
-    <main className="legal-page">
-      <a className="back-link" href="/">
-        Back to Home
-      </a>
-      <span className="eyebrow">uPro Logistics</span>
-      <h1>Terms & Conditions</h1>
-      <p className="updated">Last updated: July 9, 2026</p>
+    <main className="site legal-site">
+      <SiteHeader />
+      <div className="legal-page">
+        <a className="back-link" href="/">
+          Back to Home
+        </a>
+        <span className="eyebrow">uPro Logistics</span>
+        <h1>Terms & Conditions</h1>
+        <p className="updated">Last updated: July 9, 2026</p>
 
       <section>
         <h2>Use of this website</h2>
@@ -54,6 +59,8 @@ export default function TermsAndConditions() {
         <p>Questions about these terms can be sent to info@uprologistics.com or by calling (312) 373-1282.</p>
       </section>
 
+      <SmsTermsContent />
+
       <footer className="footer">
         <nav aria-label="Legal navigation">
           <a href="/privacy-policy">Privacy Policy</a>
@@ -62,6 +69,7 @@ export default function TermsAndConditions() {
           <a href="/contact">Contact Us</a>
         </nav>
       </footer>
+      </div>
     </main>
   );
 }
