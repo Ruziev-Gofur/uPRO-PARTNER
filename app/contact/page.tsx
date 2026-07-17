@@ -1,5 +1,6 @@
 import { Mail, Phone, Send } from "lucide-react";
 import ContactForm from "../contact-form";
+import ThemeToggle from "../theme-toggle";
 
 const navItems = [
   ["Home", "/#home"],
@@ -29,6 +30,7 @@ export default function ContactPage() {
             </a>
           ))}
         </nav>
+        <ThemeToggle />
         <a className="header-call" href="tel:+13123731282">
           <Phone size={17} />
           (312) 373-1282
